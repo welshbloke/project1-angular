@@ -102,7 +102,7 @@ div.home-page h1 {
     font-size: 100px;
 }
 
-/** Contact page **/
+/* Contact page */
 #contact {
 	margin-left: 30px;
 	margin-right: 30px;
@@ -205,4 +205,22 @@ img {
 
 video {
 	max-width: 100%;
+}
+
+/* Social page */
+.social-container {
+	display: table;
+	margin: auto;
+	margin-top: 25px;
+	background-color: rgba(217, 237, 247, 0.62);
+	padding:15px;
+	border: solid grey 1pt;
+	border-radius: 5px;
+}
+
+.social-image {
+	justify-content: center;
+	border: solid grey 1px;
+	margin: 10px;
+	border-radius: 5px;
 }
