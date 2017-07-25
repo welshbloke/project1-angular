@@ -1,0 +1,133 @@
+/* backgroung image */
+
+body {
+	background-image: url("../media/images/cover2a.png");
+}
+
+/* main page formatting */
+
+#main-image {
+	border: solid grey 1px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+div.home-page {
+    background: transparent;
+    font-size: large;
+    text-align: center;
+}
+ 
+div.home-page h1 {
+    background: transparent;
+    font-size: 300%;
+}
+
+/* nav bar */
+
+.navbar-default {
+	background-color: rgba(217, 237, 247, 0.62);
+	border-bottom: 1px solid black;
+}
+
+/* iTunes formatting */
+
+#iTunes {
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(217, 237, 247, 0.9);
+	font-size: 12pt;
+	margin: 30px;
+	border: solid black 1pt;
+}
+
+
+#iTunes-query {
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(217, 237, 247, 0.9);
+	font-size: 12pt;
+	margin: 30px;
+	border: solid black 1pt;
+}
+
+.panel-heading {
+	border: solid black 1pt;
+}
+
+#iTunes-img {
+	display: block;
+	margin: auto;
+	border: solid black 1pt;
+}
+
+#iTunes-box {
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(217, 237, 247, 0.62);
+	font-size: 12pt;
+	margin: 40px;
+	border: solid black 1pt;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+    font-size: 50px;
+}
+
+.music-container {
+	display: table;
+    margin: 0 auto;
+	padding: 20px;
+	background-color: rgba(217, 237, 247, 0.62);
+	border-radius: 30px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+/* Contact page */
+#contact {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(217, 237, 247, 0.62);
+	font-size: 12pt;
+	border: solid black 1pt;
+}
+
+/* members page */
+
+.all-members {
+	margin: 5px;
+	background-color: rgba(217, 237, 247, 0.62);
+	padding: 20px 10px 20px 10px;
+	border: 1px solid grey;
+}
+
+#members-container {
+	margin-top: 25px;
+	background-color: rgba(217, 237, 247, 0.62);
+	padding-top:15px;
+	padding-bottom: 15px;
+	border: solid grey 1pt;
+	border-radius: 5px
+}
+
+.photo-container {
+	display: table;
+    margin: auto;
+    padding: 10px;
+	background-color: rgba(217, 237, 247, 0.62);
+	border-radius: 30px;
+	border: 1px solid grey;
+	margin-bottom: 20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+video {
+	max-width: 100%;
+}

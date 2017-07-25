@@ -1,0 +1,22 @@
+{
+  "name": "project1",
+  "description": "AngularJS Project 1 - The Band Website",
+  "main": "index.js",
+  "authors": [
+    "Kris Dighton"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/welshbloke/project1-angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5"
+  }
+}

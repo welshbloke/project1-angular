@@ -1,0 +1,62 @@
+<band-nav></band-nav>
+<div>
+	<h2>Contact Page</h2>
+</div>
+<div class="panel panel-primary" id="contact">
+	<form class="viewType" name="band_form" ng-submit="submit(banForm(band_form))" novalidate>
+		<label>Name (required)</label>
+			<input 	class = "form-control"
+					id = "form-input"
+					width = "100"
+					type = "text"
+					pattern = "[A-Za-z ]+"
+					placeholder = "Please enter your name"
+					name = "clientname"
+					ng-model = "client.clientname"
+					required />
+		<label>Email (required)</label>
+			<input 	class = "form-control"
+					id = "form-input"
+					type = "email"
+					placeholder = "Please enter your email address"
+					name = "email"
+					ng-model = "cilent.email"
+					required />
+		<label>Subscribe to Newsletter</label>
+			<input 	class = "form-control"
+					id="checkbox"
+					type = "checkbox"
+					name = "newsletter"
+					ng-model = "client.newsletter">
+		<label>Keep informed of upcomming events and gigs</label>
+			<input 	class = "form-control"
+					id="checkbox"
+					type = "checkbox"
+					name = "gigs"
+					ng-model = "client.gigs">
+		<p id="contact-text">To make a booking enquiry (wedding, corperate event etc), please select a preferred date, and give us a few details
+			about what you're after</p>
+		<label>Date</label>
+			<input 	class = "form-control"
+					id = "form-date"
+					type = "date"
+					name = "date"
+					ng-model = "cilent.date">
+		<label>Description</label>
+			<textarea 	class = "form-control"
+						id = "form-textinput"
+						rows = "4"
+						type = "description"
+						placeholder = "Brief description. No more than 300 characters"
+						name = "description"
+						ng-maxlength = 300
+						ng-model = "cilent.description">
+			</textarea>
+		<div class = "col-md-5 error-container" ng-show = "band_form.description.$dirty && band_form.description.$invalid">
+			<label style = 'color: red'>Error:</label>
+			<p class = "error" ng-show="band_form.description.$error.maxlength">Your description cannot be longer than 300 characters</p>
+		</div>
+		<br>
+		<button ng-disabled="band_form.$invalid" class="btn btn-primary">Submit</button>
+	</form>
+</div>

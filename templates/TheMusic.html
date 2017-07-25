@@ -1,0 +1,85 @@
+<band-nav></band-nav>
+<div>
+	<h2/>The Music<h2>
+</div>
+
+<!-- Current songs -->
+
+<div class = "container">
+	<h3>Listen to some of our latest songs, or search our back catalogue on iTunes below</h3>
+	<div class="col-lg-6">
+		<div class = "music-container">
+			<h4>Take The Last Train to Clarksville</h4>	
+			<audio controls>
+				<source src="media/audio/Clarksville.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+		<div class = "music-container">
+		<h4>I'm a believer</h4>
+			<audio controls>
+				<source src="media/audio/ImABeliever.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+	</div>
+	<div class = "col-lg-6">
+		<div class = "music-container">
+		<h4>Daydream Believer</h4>
+			<audio controls>
+				<source src="media/audio/DaydreamBeliever.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+		<div class = "music-container">
+			<h4>Stepping Stone</h4>
+			<audio controls>
+				<source src="media/audio/SteppingStone.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+	</div>
+</div>
+
+<!--iTunes Search-->
+
+<div class="panel panel-primary" id="iTunes">
+
+<!--iTunes Input -->
+
+	<div ng-controller='iTunesController'>
+		<div class="panel panel-primary" id="iTunes-query">
+			<form class="form-inline">
+				<h2>Search our back catalogue on iTunes</h2>
+				<input ng-model="query" type="text" placeholder="Search for a song" autofocus>
+				<input type="submit" ng-click="query_change()" value="Search">
+			</form>
+		</div>
+
+<!--iTunes Carousel -->
+
+		<div id="iTunesCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class = "item" ng-repeat='item in results' ng-class="{active: $first}">
+					<div class="panel panel-primary" id="iTunes-box">
+						<br>
+						<img class='img-responsive' id="iTunes-img" ng-src="{{item.artworkUrl100}}" style="">
+						<br>
+						<div class="panel-heading">
+							<h3 class="panel-title">{{item.trackName}}, from the {{item.collectionName}} album.</h3>
+							<a class="panel-title" href={{item.previewUrl}} target="_blank">Click here to play a sample</a>
+							<br>
+							<a class="panel-title" href="{{item.trackViewUrl}}" target="_blank">Click here to purchase</a>
+							<p>(Opens a new window)</p>
+						</div >
+				</div>
+				</div>
+			</div>
+
+<!--Carousel controls-->
+
+			<span class="left carousel-control" data-target="#iTunesCarousel" role="button" data-slide="prev" id="cont">
+				<span class="glyphicon glyphicon-menu-left icon-prev"></span>
+			</span>
+			<span class="right carousel-control" data-target="#iTunesCarousel" role="button" data-slide="next" id="cont">
+				<span class="glyphicon glyphicon-menu-right icon-next"></span>
+			</span>	
+		</div>
+	</div>
+</div>
