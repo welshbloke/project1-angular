@@ -1,0 +1,19 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "AngularJS Project 1 - The Band Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/welshbloke/project1-angular.git"
+  },
+  "author": "Kris Dighton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/welshbloke/project1-angular/issues"
+  },
+  "homepage": "https://github.com/welshbloke/project1-angular#readme"
+}
